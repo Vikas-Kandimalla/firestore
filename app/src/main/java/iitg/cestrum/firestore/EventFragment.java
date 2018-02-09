@@ -64,7 +64,7 @@ public class EventFragment extends Fragment {
                 Calendar c = Calendar.getInstance();
                 c.set(year,month,dayOfMonth);
                 String time = (new SimpleDateFormat("dd/MM/yyyy",Locale.ENGLISH)).format(c.getTime());
-                dateString = (new SimpleDateFormat("dd/MM/yyyy",Locale.ENGLISH)).format(c.getTime());
+                dateString = (new SimpleDateFormat("yyyy-MM-dd",Locale.ENGLISH)).format(c.getTime());
                 dateView.setText(time);
             }
         },date.get(Calendar.YEAR),date.get(Calendar.MONTH),date.get(Calendar.DATE));
